@@ -3,6 +3,9 @@
 <p align="center"><strong>Show the exact MCP tool call your upgrade breaks.</strong></p>
 <p align="center">Visual contract diff · verified failure examples · dependency-free CLI</p>
 <p align="center"><a href="https://lashonbakker-crypto.github.io/tooldelta/">Try the live workbench</a> · <a href="#quick-start">Quick start</a> · <a href="README.zh-CN.md">中文</a> · <a href="DESIGN.md">How it works</a></p>
+<p align="center"><a href="https://github.com/lashonbakker-crypto/tooldelta/actions/workflows/ci.yml"><img src="https://github.com/lashonbakker-crypto/tooldelta/actions/workflows/ci.yml/badge.svg" alt="Test ToolDelta"></a></p>
+
+[![ToolDelta live workbench with an old-accepted, new-rejected request](demo.jpg)](https://lashonbakker-crypto.github.io/tooldelta/)
 
 An MCP server upgrade can change one required argument and break an otherwise working agent. ToolDelta compares **two saved tool snapshots** and shows the drift **with concrete arguments that the old input schema accepts and the new one rejects**.
 
@@ -20,6 +23,14 @@ old: maximum = 100      new: maximum = 20
 ```
 
 The included synthetic upgrade reports **5 risk findings, 4 distinct verified requests and 1 manual-review finding**. The same request can demonstrate more than one change. These are schema checks, not live tool calls.
+
+<details>
+<summary>See the actual findings view</summary>
+
+![ToolDelta workbench showing five risks, four verified examples and one review item](workbench.jpg)
+
+Actual screenshots of the deployed workbench using the included synthetic snapshots.
+</details>
 
 ## Why use it
 

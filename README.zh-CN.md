@@ -4,9 +4,19 @@
 
 [在线工作台](https://lashonbakker-crypto.github.io/tooldelta/) · [English](README.md) · [实现说明](DESIGN.md)
 
+[![ToolDelta 在线工作台实拍](demo.jpg)](https://lashonbakker-crypto.github.io/tooldelta/)
+
 升级 MCP 服务后，只增加一个必填参数或收紧一个取值范围，就可能让原本正常的 Agent 调用失败。ToolDelta 比较两份保存的工具定义，提供差异、风险说明，以及“旧输入规则接受、新输入规则拒绝”的具体参数示例。浏览器与 CLI 使用同一核心，不连接服务、不执行工具，也不调用模型。
 
 附带的自编教学样本产生 5 条风险、4 份不同的已验证请求、1 条人工复核项。一个请求可能同时触及多项变化。这里验证的是工具输入 Schema，不是实际服务返回。
+
+<details>
+<summary>展开查看真实分析结果</summary>
+
+![工作台显示五条风险、四份已验证请求及一条人工复核项](workbench.jpg)
+
+截图来自已部署的工作台，使用仓库附带的自编快照。
+</details>
 
 ## 立即运行
 
